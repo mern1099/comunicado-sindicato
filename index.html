@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunicado Sindicato</title>
+    <title>Comunicado Sindicato ARSAT</title>
     <style>
         body {
             margin: 0;
@@ -11,68 +11,98 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
         }
         .container {
             position: relative;
-            width: 600px; /* Ajusta según el tamaño real del afiche */
-            height: 900px;
+            width: 100%;
+            max-width: 600px;
             background: url('Afiche Arsat.png') no-repeat center center;
-            background-size: contain; /* Se ajusta manteniendo la proporción */
-            background-color: #fff; /* Fondo por si la imagen no carga */
+            background-size: cover;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
         .texto {
-            position: absolute;
-            top: 30%; /* Ajusta la posición del texto dentro del afiche */
-            left: 10%;
-            width: 80%;
-            height: 50%;
-            overflow-y: scroll;
-            background: rgba(255, 255, 255, 0.6); /* Para mejorar la legibilidad */
-            padding: 10px;
+            margin-top: 100px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            color: #000; /* Color del texto */
+            max-height: 500px;
+            overflow-y: auto;
+            text-align: left;
         }
+        h2, h3 {
+            color: #333;
+        }
+        ul {
+            padding-left: 10px;
+        }
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .social-buttons button {
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            width: 100px;
+        }
+        .whatsapp { background: #25D366; }
+        .facebook { background: #1877F2; }
+        .twitter { background: #1DA1F2; }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="texto">
+            <h2>🔴 Comunicado 01/03/2025</h2>
+            <p><strong>📢 14 MESES SIN AUMENTOS SALARIALES 📢</strong></p>
+            <p>Los trabajadores de ARSAT hemos llegado a una situación insostenible. Llevamos <strong>14 meses sin ningún tipo de actualización salarial</strong>, lo que ha provocado una pérdida significativa de nuestro poder adquisitivo frente a la inflación descontrolada.</p>
 
-<div class="container">
             <h3>🚨 EXIGIMOS UNA RESPUESTA URGENTE 🚨</h3>
-        <p>Desde hace meses venimos manifestándonos pacíficamente, presentando nuestros reclamos a la dirección de la empresa y a las autoridades responsables. Sin embargo, hasta el día de hoy, nuestras solicitudes han sido ignoradas.</p>
+            <p>Desde hace meses venimos manifestándonos pacíficamente, presentando nuestros reclamos a la dirección de la empresa y a las autoridades responsables. Sin embargo, hasta el día de hoy, nuestras solicitudes han sido ignoradas.</p>
 
-        <h3>⚠️ CONSECUENCIAS DE LA FALTA DE RESPUESTA ⚠️</h3>
-        <ul>
-            <li>La pérdida del salario real impacta en nuestra calidad de vida y la de nuestras familias.</li>
-            <li>La falta de incentivos genera desmotivación en los equipos de trabajo.</li>
-            <li>El congelamiento salarial pone en riesgo la retención de talento en una empresa clave para la soberanía tecnológica del país.</li>
-        </ul>
+            <h3>⚠️ CONSECUENCIAS DE LA FALTA DE RESPUESTA ⚠️</h3>
+            <ul>
+                <li>La pérdida del salario real impacta en nuestra calidad de vida y la de nuestras familias.</li>
+                <li>La falta de incentivos genera desmotivación en los equipos de trabajo.</li>
+                <li>El congelamiento salarial pone en riesgo la retención de talento en una empresa clave para la soberanía tecnológica del país.</li>
+            </ul>
 
-        <h3>📊 LA REALIDAD DE ARSAT 📊</h3>
-        <p>La empresa obtiene <strong>superávit fiscal todos los meses</strong>, lo que demuestra su solidez financiera. Sin embargo, el gobierno no permite destinar esos recursos para abonar salarios dignos a sus trabajadores, perpetuando así una injusta precarización laboral.</p>
+            <h3>📊 LA REALIDAD DE ARSAT 📊</h3>
+            <p>La empresa obtiene <strong>superávit fiscal todos los meses</strong>, lo que demuestra su solidez financiera. Sin embargo, el gobierno no permite destinar esos recursos para abonar salarios dignos a sus trabajadores, perpetuando así una injusta precarización laboral.</p>
 
-        <h3>💪 SEGUIMOS EN PIE DE LUCHA 💪</h3>
-        <p>No pedimos privilegios, <strong>exigimos lo que nos corresponde</strong>: una recomposición salarial justa y acorde a la realidad económica que enfrentamos. Continuaremos con medidas de visibilización hasta obtener una respuesta concreta.</p>
+            <h3>💪 SEGUIMOS EN PIE DE LUCHA 💪</h3>
+            <p>No pedimos privilegios, <strong>exigimos lo que nos corresponde</strong>: una recomposición salarial justa y acorde a la realidad económica que enfrentamos. Continuaremos con medidas de visibilización hasta obtener una respuesta concreta.</p>
 
-        <p><strong>📍 Convocamos a todos los trabajadores a mantenerse unidos y firmes en este reclamo legítimo.</strong></p>
+            <p><strong>📍 Convocamos a todos los trabajadores a mantenerse unidos y firmes en este reclamo legítimo.</strong></p>
 
-        <p>#BastaDeSalariosCongelados #ARSATEnLucha #DignidadLaboral</p>
-    </div>
-    <div class="social-buttons">
+            <p>#BastaDeSalariosCongelados #ARSATEnLucha #DignidadLaboral</p>
+        </div>
+        <div class="social-buttons">
         <p>📢 ¡Comparte este comunicado!</p>
-        <a href="https://api.whatsapp.com/send?text=https://mern1099.github.io/comunicado-sindicato/" target="_blank">
+        <a href="https://api.whatsapp.com/send?text=📢 Comunicado ARSAT - 14 meses sin aumentos salariales. ¡Exigimos una respuesta urgente! %0A%23BastaDeSalariosCongelados %23ARSATEnLucha %23DignidadLaboral %0Ahttps://mern1099.github.io/comunicado-sindicato/" target="_blank">
             <button class="whatsapp">WhatsApp</button>
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://mern1099.github.io/comunicado-sindicato/" target="_blank">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://mern1099.github.io/comunicado-sindicato/&quote=📢 Comunicado ARSAT - 14 meses sin aumentos salariales. ¡Exigimos una respuesta urgente! %23BastaDeSalariosCongelados %23ARSATEnLucha %23DignidadLaboral" target="_blank">
             <button class="facebook">Facebook</button>
         </a>
-        <a href="https://twitter.com/intent/tweet?text=📢%20Comunicado%20ARSAT%20https://mern1099.github.io/comunicado-sindicato/" target="_blank">
+        <a href="https://twitter.com/intent/tweet?text=📢 Comunicado ARSAT - 14 meses sin aumentos salariales. ¡Exigimos una respuesta urgente! %23BastaDeSalariosCongelados %23ARSATEnLucha %23DignidadLaboral %0Ahttps://mern1099.github.io/comunicado-sindicato/" target="_blank">
             <button class="twitter">Twitter</button>
         </a>
     </div>
-</div>
+    </div>
 </body>
 </html>
+
